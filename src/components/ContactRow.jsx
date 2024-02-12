@@ -3,6 +3,7 @@ import SelectedContact from "./SelectedContact";
 
 function ContactRow({setSelectedContactId, contact}) {
     return (
+        <>
         <tr onClick={()=>{
             setSelectedContactId(contact.id);
         }}> 
@@ -10,7 +11,7 @@ function ContactRow({setSelectedContactId, contact}) {
             <td>{contact.email}</td>
             <td>{contact.phone}</td>
         </tr>
-
+        </>
     );
 }
 

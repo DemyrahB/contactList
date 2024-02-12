@@ -24,6 +24,7 @@ export default function ContactList({setSelectedContactId}) {
         fetchContacts()
     }, [])
     return (
+        <>
         <table>
             <thead>
                 <tr onClick={()=>{
@@ -43,5 +44,6 @@ export default function ContactList({setSelectedContactId}) {
                 })}
             </tbody>
         </table>
-    );
+        </> 
+   );
 }
